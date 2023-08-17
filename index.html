@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>NewsLetter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main class="card">
+    <section class="card__container">
+
+      <div class="container-imagem active">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="" class="imagem active" id="imagem">
+      </div>
+
+      <div class="container active" id="container">
+        <div class="container-titulo">
+          <h1 class="titulo">Stay updated!</h1>
+          <p class="text">Join 60,000+ product managers receiving </p> <p class="text">monthly updates on:</p>
+        </div>
+
+        <div class="lista__container">
+          <ul class="lista">
+            <li class="lista__item">
+              <img src="./assets/images/icon-list.svg" alt="" class="icon-list">Product discovery and building what matters
+            </li>
+            <li class="lista__item">
+              <img src="./assets/images/icon-list.svg" alt="" class="icon-list">Measuring to ensure updates are a success
+            </li>
+            <li class="lista__item">
+              <img src="./assets/images/icon-list.svg" alt="" class="icon-list">And much more!
+            </li>
+          </ul>
+        </div>
+
+        <div class="container-formulario">
+          <form class="formulario" id="form" onsubmit="event.preventDefault()">
+            <label class="label" for="email">Email adress</label>
+            <input type="email" class="input-form" placeholder="email@company.com">
+            <button class="formulario-botao" id="button">Subscribe to monthly newsletter!</button>
+          </form>
+          
+        </div>
+      </div> 
+
+      <div class="card-2 inactive" id="card-2">
+        <div class="card-2-container">
+          <div class="card-2-content">
+
+            <div class="content">
+              <img src="./assets/images/icon-list.svg" alt="" class="sucess-icon">
+
+              <h2 class="titulo">Thanks for subscribing!</h2>
+
+              <p class="text">A confirmation email has been sent to ash@loremcompany.com. Please open it and click the
+                button inside to confirm your subscription</p>
+            </div>
+
+            <div class="botao-container">
+              <button class="formulario-botao" id="button-2">Dimiss Message</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>
