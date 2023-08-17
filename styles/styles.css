@@ -1,0 +1,255 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+	--azul: hsl(234, 29%, 20%);
+	--cinza: hsl(235, 18%, 26%);
+	--cinza-claro: hsl(231, 7%, 60%);
+	--branco: hsl(0, 0%, 100%);
+	--Roboto: 'Roboto', sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: var(--Roboto);
+}
+
+.active{
+	display: block;
+}
+
+.inactive{
+	display: none;
+}
+
+.imagem{
+	min-width: 100%;
+}
+
+.container-titulo{
+	max-width: 350px;
+}
+
+.titulo{
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: var(--azul);
+	margin-top: 30px;
+	margin-bottom: 25px;
+	margin-left: 30px;
+}
+
+.text{
+	color: var(--azul);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.8;
+}
+
+
+.lista__container{
+	margin-left: 30px;
+	margin-top: 30px;
+	max-width: 320px;
+}
+
+.lista__item{
+	margin-bottom: 25px;
+	display: flex;
+	align-items: start;
+	color: var(--azul);
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+
+.icon-list{
+	margin-right: 20px;
+}
+
+.container-formulario{
+	margin-left: 30px;
+	margin-top: 40px;
+}
+
+.formulario{
+	display: flex;
+	flex-direction: column;
+}
+
+.input-form{
+	margin-top: 10px;
+	width: 350px;
+	height: 60px;
+	border-radius: 10px;
+	color: var(--cinza-claro);
+	padding: 0;
+	font-size: 1.1rem;
+	padding-left: 20px;	
+	border: 1px solid var(--cinza-claro);
+}
+
+.label{
+	font-size: 0.8rem;
+	color: var(--azul);
+	font-weight: 700;
+}
+
+
+.formulario-botao{
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	background-color: var(--azul);
+	color: var(--branco);
+	border-radius: 10px;
+	border: none;
+	font-size: 1rem;
+	font-weight: 700;
+	font-family: var(--Roboto);
+	cursor: pointer;
+	width: 350px	;
+}
+
+.sucess-icon{
+	width: 60px;
+	height: 60px;
+	margin-left: 30px;
+}
+
+.card-2{
+	height: 100%;
+}
+
+.card-2-container{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.card-2-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 95%;
+}
+
+.content{
+	margin-top: 100px;
+}
+
+.botao-container{
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (min-width: 1444px) {
+
+	.card{
+		border: 1px solid red;
+		display: flex;
+		height: 100vh;
+		align-items: center;
+		justify-content: center;
+		background: var(--azul);
+	}
+
+	.card__container{
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		background: white;
+		justify-content: space-around;
+		height: 70%;
+		min-width: 860px;
+		max-width: 860px;
+		border-radius: 30px;
+	}
+
+	.container-imagem{
+		height: 95%;
+		display: flex;
+		justify-content: end;
+	}
+
+	.imagem {
+		height: 100%;
+		content: url('../assets/images/illustration-sign-up-desktop.svg');
+	}
+
+	.titulo{
+		font-size: 3.2rem;
+	}
+
+	.lista__item{
+		margin-bottom: 10px;
+	}
+
+	.lista__container{
+		max-width: 360px;
+	}
+
+	.container-titulo{
+		max-width: 360px;
+	}
+
+	.content{
+		width: 50%;
+	}
+
+	.botao-container{
+		display: flex;
+		justify-content: start;
+		margin-left: 30px;
+	}
+
+
+}
